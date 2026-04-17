@@ -1,6 +1,6 @@
 {
   "name": "@live-direct-marketing/sdk",
-  "version": "0.2.0-beta.1",
+  "version": "0.2.0-beta.2",
   "description": "Official TypeScript SDK for LDM.delivery — email delivery API for AI agents. Pay only for inbox delivery.",
   "keywords": [
     "email",
