@@ -1,0 +1,60 @@
+{
+  "name": "@live-direct-marketing/sdk",
+  "version": "0.2.0-beta.1",
+  "description": "Official TypeScript SDK for LDM.delivery — email delivery API for AI agents. Pay only for inbox delivery.",
+  "keywords": [
+    "email",
+    "api",
+    "sdk",
+    "ldm",
+    "delivery",
+    "smtp",
+    "ai-agents",
+    "a2a",
+    "mcp"
+  ],
+  "homepage": "https://developers.live-direct-marketing.online",
+  "bugs": "https://developers.live-direct-marketing.online/support",
+  "author": "Live Direct Marketing",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "ldm-mcp": "./dist/mcp.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/mcp.ts --format esm,cjs --dts --clean --target es2020",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/live-direct-marketing/ldm-sdk-js.git"
+  }
+}
