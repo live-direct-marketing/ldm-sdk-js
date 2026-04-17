@@ -47,6 +47,7 @@
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.17.9",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
